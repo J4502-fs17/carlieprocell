@@ -1,0 +1,46 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  font-size: 10px;
+}
+
+h1 {
+  color: gray;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'IM Fell Great Primer', "Times New Roman", serif;
+}
+
+p {
+  color: gray;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Roboto', "Arial", sans-serif;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+#nav {
+  padding: 0;
+}
+
+#nav li {
+  list-style-type: none;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-family: 'Cabin Sketch', "Comic Sans", cursive;
+}
+
+#nav li a {
+  color: white;
+}
+
+img {
+  border-style: none;
+}
