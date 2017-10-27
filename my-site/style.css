@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   text-align: center;
   background-color: black;
   font-size: 10px;
@@ -25,22 +25,107 @@ p {
   font-size: 0.9rem;
 }
 
+img {
+  border-style: none;
+}
+
+/*flexbox styles*/
+
+#container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
 #nav {
   padding: 0;
+  list-style-type: none;
 }
 
 #nav li {
-  list-style-type: none;
-  text-align: center;
-  text-decoration: underline;
+  padding: 15px 18px;
+  display: inline-flex;
+}
+
+#nav li a, a:visited {
+  color: white;
+  text-decoration: none;
   font-size: 1.2rem;
   font-family: 'Cabin Sketch', "Comic Sans", cursive;
 }
 
-#nav li a {
-  color: white;
+#nav a:hover {
+  text-decoration: underline;
 }
 
-img {
-  border-style: none;
+@media (max-width: 450px) {
+  #container {
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+  #nav li {
+    display: flex;
+    justify-content: center;
+  }
 }
+
+/*grid styles*/
+
+/*.cards{
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "a b c"
+  "d d d"
+}
+
+.cards li {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cards p, a, a:visited, a:hover {
+  color: black;
+  font-family: 'Roboto', "Arial", sans-serif;
+}
+
+.cards a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cards a:hover {
+  text-decoration: underline;
+}
+
+.card1 {
+  grid-area: a;
+    }
+
+.card2 {
+  grid-area: b;
+    }
+
+.card3 {
+  grid-area: c;
+}
+
+.card4 {
+  grid-area: d;
+}
+
+@media screen and (max-width: 450px){
+  .cards {
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c"
+    "d d d"
+  }
+}*/
