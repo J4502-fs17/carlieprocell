@@ -12,6 +12,13 @@ h1 {
   font-weight: bold;
   font-family: 'IM Fell Great Primer', "Times New Roman", serif;
 }
+h2 {
+  color: gray;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'IM Fell Great Primer', "Times New Roman", serif;
+}
 
 p {
   color: gray;
@@ -59,35 +66,16 @@ img {
   text-decoration: underline;
 }
 
-@media (max-width: 450px) {
-  #container {
-    flex-direction:column;
-    flex-wrap: wrap;
-  }
-  #nav li {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 /*grid styles*/
 
-/*.cards{
+.cards{
   margin: 10px 10px 10px 10px;
-  padding: 0;
-  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "a b c"
-  "d d d"
-}
-
-.cards li {
-    background-color: gray;
-    padding: 10px;
-    border-radius: 5px;
+  "a a b b"
+  "c c d d";
 }
 
 .cards p, a, a:visited, a:hover {
@@ -104,28 +92,55 @@ img {
   text-decoration: underline;
 }
 
-.card1 {
+#card1 {
   grid-area: a;
+  background-color: gray;
+  padding: 10px;
     }
 
-.card2 {
+#card2 {
   grid-area: b;
+  background-color: gray;
+  padding: 10px;
     }
 
-.card3 {
+#card3 {
   grid-area: c;
+  background-color: gray;
+  padding: 10px;
 }
 
-.card4 {
+#card4 {
   grid-area: d;
+  background-color: gray;
+  padding: 10px;
 }
 
-@media screen and (max-width: 450px){
+
+@media (max-width: 350px) {
   .cards {
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "a a a"
-    "b b b"
-    "c c c"
-    "d d d"
+    "a"
+    "b"
+    "c"
+    "d"
   }
-}*/
+  #container {
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+  #nav li {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a b c"
+    "d d d";
+  }
+}
