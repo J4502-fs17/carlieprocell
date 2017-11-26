@@ -29,12 +29,30 @@ p {
   font-family: 'Roboto', "Arial", sans-serif;
 }
 
+a, a:visited, a:hover {
+  color: gray;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Roboto', "Arial", sans-serif;
+}
+
 .copyright {
   font-size: 0.9rem;
 }
 
 img {
   border-style: none;
+  width: 50%;
+}
+.mobile {
+  width: 200px;
+}
+
+@media (max-width: 350px) {
+  img {
+    width: 200px;
+  }
 }
 
 /*hamburger menu styles*/
